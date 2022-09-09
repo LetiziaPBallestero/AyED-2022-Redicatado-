@@ -7,6 +7,7 @@
 * [Práctica 1B](https://github.com/LetiziaPBallestero/AyED-2022-Redicatado-/tree/main/Pr%C3%A1ctico/Pr%C3%A1ctico%201)  :desktop_computer:	
 
 * [Enunciado TP 2](https://github.com/LetiziaPBallestero/AyED-2022-Redicatado-/blob/main/Pr%C3%A1ctico/!Enunciados%20y%20Material/TP2.pdf) :bookmark_tabs:	
+* [Práctica 2](https://github.com/LetiziaPBallestero/AyED-2022-Redicatado-/tree/main/Pr%C3%A1ctico/Pr%C3%A1ctico%202/src)  :desktop_computer:	
 ### :books: Material:
 * [Enunciados](https://github.com/LetiziaPBallestero/AyED-2022-Redicatado-/tree/main/Pr%C3%A1ctico/!Enunciados%20y%20Material) :bookmark_tabs:	
 * [Material de la Teoría](https://github.com/LetiziaPBallestero/AyED-2022-Redicatado-/tree/main/Te%C3%B3rico) :open_file_folder:	
