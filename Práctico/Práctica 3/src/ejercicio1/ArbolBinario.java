@@ -1,5 +1,7 @@
 package ejercicio1;
 
+import pilaycola.ColaGenerica;
+
 public class ArbolBinario<T> {
 	private T dato;
 	private ArbolBinario<T> hijoIzquierdo;
@@ -78,7 +80,7 @@ public class ArbolBinario<T> {
 	}
 
 	public int contarHojas() {
-		// Devuelve la cantidad de ·rbol/sub·rbol hojas del ·rbol receptor.
+		// Devuelve la cantidad de √°rbol/sub√°rbol hojas del √°rbol receptor.
 		int i = 0;
 		int suma = 0;
 		if (!this.esVacio()) {
@@ -98,22 +100,51 @@ public class ArbolBinario<T> {
 	}
 
 	public ArbolBinario<T> espejo() {
-		// Devuelve el ·rbol binario espejo del ·rbol receptor
+		// Devuelve el √°rbol binario espejo del √°rbol receptor
 		// los que son hijos derechos vuelven como hijos izquierdos
 		// y asi
 		ArbolBinario<T> nuevoArbol = new ArbolBinario<T>();
 
-		if (this.tieneHijoIzquierdo()) 
+		if (this.tieneHijoIzquierdo())
 			nuevoArbol.agregarHijoDerecho(this.getHijoIzquierdo().espejo());
-		
-		if (this.tieneHijoDerecho()) 
+
+		if (this.tieneHijoDerecho())
 			nuevoArbol.agregarHijoIzquierdo(this.getHijoDerecho().espejo());
-		
+
 		return nuevoArbol;
 	}
 
 	public void entreNiveles(int n, int m) {
-
+		/*
+		 * Imprime el recorrido por niveles de los elementos del √°rbol receptor entre
+		 * los niveles n y m (ambos inclusive). (0‚â§n<m‚â§altura del √°rbol)
+		 * ASUMO QUE NO ME VAN A MANDAR UN ARBOL VACIO NI VALORES RANCIOS
+		 * preguntar
+		 */
+		int nivel = 0;
+		ColaGenerica<ArbolBinario<T>> cola = new ColaGenerica<ArbolBinario<T>>();
+		ArbolBinario<T> arbolAux;
+		cola.encolar(this); // encolo el arbol 
+		cola.encolar(null); // encolo la primer marca de nivel 
+		
+		while ((!cola.esVacia()) && (nivel <= m)) {
+			// mientras tenga elementos para procesar 
+			// y no llegue al nivel que me piden ... 
+			arbolAux = cola.desencolar(); // armo un arbol con lo que desencolo
+			if (arbolAux != null) { // si no desencolo un null NO cambie de nivel
+				if (nivel >= n )
+					System.out.print (arbolAux.getDato() + " - ");
+				if (arbolAux.tieneHijoIzquierdo())
+					cola.encolar(arbolAux.getHijoIzquierdo());
+				if (arbolAux.tieneHijoDerecho())
+					cola.encolar(arbolAux.getHijoDerecho());
+			} else if (!cola.esVacia()) { 
+				//si lo que desencole fue un null pero la cola no quedo vacia 
+				cola.encolar(null);
+				nivel++;
+			}
+			
+		}
 	}
 
 }
