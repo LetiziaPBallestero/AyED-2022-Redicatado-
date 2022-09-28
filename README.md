@@ -6,6 +6,7 @@
 * [Práctica 1B](https://github.com/LetiziaPBallestero/AyED-2022-Redicatado-/tree/main/Pr%C3%A1ctico/Pr%C3%A1ctico%201)  :desktop_computer:	
 * [Práctica 2](https://github.com/LetiziaPBallestero/AyED-2022-Redicatado-/tree/main/Pr%C3%A1ctico/Pr%C3%A1ctico%202/src)  :desktop_computer:	
 * [Práctica 3](https://github.com/LetiziaPBallestero/AyED-2022-Redicatado-/tree/main/Pr%C3%A1ctico/Pr%C3%A1ctico%203/src)  :desktop_computer:	
+* [Práctica 4](https://github.com/LetiziaPBallestero/AyED-2022-Redicatado-/tree/main/Pr%C3%A1ctico/Pr%C3%A1ctico%204/src)  :desktop_computer:	
 
 * [Ejercicios Teóricos de Árboles](https://github.com/LetiziaPBallestero/AyED-2022-Redicatado-/tree/main/Te%C3%B3rico/Ejercicios%20de%20Arboles
 ) :bookmark_tabs:
