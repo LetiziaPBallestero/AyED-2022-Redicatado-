@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="src" path="!Enunciados y Material/tp3_ab"/>
+	<classpathentry kind="src" path="Práctico 1/src"/>
+	<classpathentry kind="src" path="Práctico 2/src"/>
+	<classpathentry kind="src" path="Práctico 3/src"/>
+	<classpathentry kind="output" path="Práctico 1/bin"/>
+</classpath>

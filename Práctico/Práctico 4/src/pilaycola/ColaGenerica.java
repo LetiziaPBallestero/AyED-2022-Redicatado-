@@ -1,0 +1,28 @@
+package pilaycola;
+
+import ejercicio2.ListaGenerica;
+import tp02.ejercicio2.ListaEnlazadaGenerica;
+
+public class ColaGenerica<T> {
+	
+	private ListaGenerica<T> dato = new ListaEnlazadaGenerica<T>();
+	
+	public void encolar(T dato) {
+		this.dato.agregarFinal(dato);
+	}
+	
+	public T desencolar () {
+		T elemento = this.dato.elemento(1);
+		this.dato.eliminarEn(1);
+		return elemento;
+	}
+	
+	public T tope () {
+		return this.dato.elemento(1);
+	}
+	
+	public boolean esVacia() {
+		return this.dato.fin();
+	}
+
+}
