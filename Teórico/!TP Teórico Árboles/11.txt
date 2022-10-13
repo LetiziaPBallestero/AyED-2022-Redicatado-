@@ -1,0 +1,5 @@
+Obtenga la expresión prefija de la siguiente expresión postfija 
+A B C * D - E F / G / - * -> postfija 
+
+( a * (( b * c ) - (d)) - (( e / f ) / g) ) -> arbol 
+

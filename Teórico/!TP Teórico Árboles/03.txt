@@ -1,0 +1,12 @@
+Suponga que para un árbol binario T con N nodos (N>1), el último nodo en postorden es el
+mismo que el último nodo en inorden, ¿qué se puede concluir? 
+
+b. el subárbol derecho de T es vacio 
+
+A B C D E F G (postOrden) -> G será la raíz del árbol ya que el 
+postOrden se ordena como hijoIzquierdo-hijoDerecho-raíz
+
+A B C D E F G (inOrden) -> G es la raíz (determinado en el postOrden)
+en postOrden está ordenado como hijoIzquierdo - raíz - hijoDerecho. 
+Este orden me indica que en mi raíz (G) lo que esté a su derecha será el sub-árbol
+

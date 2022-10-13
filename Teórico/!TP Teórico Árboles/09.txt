@@ -1,0 +1,13 @@
+Construya el árbol de expresión correspondiente a la siguiente expresión infija. 
+( A + ( B * C )) * ( D - E) esta es una expresión INFIJA 
+Ahora tiene que pasar a POSTFIJA, se acomoda
+ABC*+DE-*  -> está en POSTFIJA 
+Y desde acá se arma el árbol de expresión 
+
+			* 
+		/	       \
+	       + 		- 
+	   /       \        /       \
+	 a          *     d           e 
+		/       \
+	       b         c 

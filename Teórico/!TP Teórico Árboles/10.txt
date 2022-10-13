@@ -1,0 +1,15 @@
+Construya el árbol de expresión correspondiente a la siguiente expresión prefija 
++ + a e / * - b c d f 
+
+¿Cuál es la profundidad del nodo D? -> D está en profundidad 3 
+Respuesta: c. 
+
+En las prefija 
+Si es un operador 
+	creo el nodo raiz 
+	agrego el subárbol izquierdo 
+	agrego el subarbol derecho 
+Si es un operando 
+	creo el nodo hoja 
+
+

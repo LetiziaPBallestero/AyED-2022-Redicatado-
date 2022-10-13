@@ -1,0 +1,9 @@
+Elija la expresión algebraica almacenada en el siguiente árbol:
+
+		+ 
+	/ 		*
+     -     c        d       e 
+   a   b 
+
+
+d)    		((a-b) / c) + (d * e) 
