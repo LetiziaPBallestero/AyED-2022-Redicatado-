@@ -22,7 +22,7 @@ public class Test {
 
 		ArbolGeneral<Integer> j = new ArbolGeneral<Integer>(2);
 
-		ArbolGeneral<Integer> k = new ArbolGeneral<Integer>(16);
+		ArbolGeneral<Integer> k = new ArbolGeneral<Integer>(11);
 
 		a.agregarHijo(b);
 		a.agregarHijo(c);

@@ -9,40 +9,52 @@ import recursos.ListaGenerica;
  * si hay más de uno devolver el primero
  */
 public class Parcial {
-	
-	public ListaEnlazadaGenerica<Integer> resolver (ArbolGeneral<Integer> ab ) { 
-		
+
+	public ListaEnlazadaGenerica<Integer> resolver(ArbolGeneral<Integer> ab) {
+
 		ListaEnlazadaGenerica<Integer> lista = new ListaEnlazadaGenerica<Integer>();
-		int contador = 0;
-		int max = -1;
-		if (!ab.esVacio() && ab != null) { 
-			resolver(ab , lista, contador , max ); 
+		ListaEnlazadaGenerica<Integer> definitiva = new ListaEnlazadaGenerica<Integer>();
+		
+		if (!ab.esVacio() && ab != null) {
+			resolver(ab, lista, definitiva);
 		}
-		return lista;
-	}
-	
-	private void resolver (ArbolGeneral<Integer> ab , ListaEnlazadaGenerica<Integer> lista, int k , int max) {
-		lista.agregarFinal(ab.getDato());
-		k++;
-		
-		if (ab.esHoja()) {
-			if (k > max) { 
-				max = k;
-				
-			}
-			
-		}
-		
-		if (ab.tieneHijos()) { 
-			ListaGenerica<ArbolGeneral<Integer>> hijos = ab.getHijos();
-			while (!hijos.fin()) { 
-				ArbolGeneral<Integer> aux = hijos.proximo();
-				resolver (aux , lista, k , max);
-				lista.eliminar(lista.tamanio());
-			}
-		}
-		
-		
+		return definitiva;
 	}
 
+	private void resolver(ArbolGeneral<Integer> ab, ListaEnlazadaGenerica<Integer> lista,
+			ListaEnlazadaGenerica<Integer> definitiva) {
+		
+		lista.agregarFinal(ab.getDato());
+		
+
+		if (ab.esHoja()) {
+
+			if (lista.tamanio() > definitiva.tamanio()) {
+				System.out.println("Vamos a clonar la lista turururu");
+
+				definitiva.comenzar();
+				while (!definitiva.fin())
+					definitiva.eliminar(definitiva.proximo());
+
+				lista.comenzar();
+				while (!lista.fin()) {
+					definitiva.agregarFinal(lista.proximo());
+				}
+
+			}
+		} else {
+			// no hace falta preguntar si tiene hijos porque es un else
+				ListaGenerica<ArbolGeneral<Integer>> hijos = ab.getHijos();
+				hijos.comenzar();
+				while (!hijos.fin()) {
+					ArbolGeneral<Integer> aux = hijos.proximo();
+					resolver(aux, lista, definitiva);
+					lista.eliminarEn(lista.tamanio());
+
+				}
+			
+
+		}
+
+	}
 }
