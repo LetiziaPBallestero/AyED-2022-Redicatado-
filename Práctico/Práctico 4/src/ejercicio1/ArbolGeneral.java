@@ -159,7 +159,7 @@ public class ArbolGeneral<T> {
 					max = cantidad;
 				cantidad=0;		
 				if (!cola.esVacia()) {			
-					cola.encolar(null);g
+					cola.encolar(null);
 				}
 			}
 		}
