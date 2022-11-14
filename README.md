@@ -7,9 +7,16 @@
 * [Práctica 2](https://github.com/LetiziaPBallestero/AyED-2022-Redicatado-/tree/main/Pr%C3%A1ctico/Pr%C3%A1ctico%202/src)  :desktop_computer:	
 * [Práctica 3](https://github.com/LetiziaPBallestero/AyED-2022-Redicatado-/tree/main/Pr%C3%A1ctico/Pr%C3%A1ctico%203/src)  :desktop_computer:	
 * [Práctica 4](https://github.com/LetiziaPBallestero/AyED-2022-Redicatado-/tree/main/Pr%C3%A1ctico/Pr%C3%A1ctico%204/src)  :desktop_computer:	
+* [Práctica 5]()  📗
+* [Práctica 6](https://github.com/LetiziaPBallestero/AyED-2022-Redicatado-/tree/main/Pr%C3%A1ctico/Pr%C3%A1ctico%206/src)  :desktop_computer:	
 
 * [Ejercicios Teóricos de Árboles](https://github.com/LetiziaPBallestero/AyED-2022-Redicatado-/tree/main/Te%C3%B3rico/Ejercicios%20de%20Arboles
 ) :bookmark_tabs:
+* [Ejercicios Teóricos de Análisis](https://github.com/LetiziaPBallestero/AyED-2022-Redicatado-/tree/main/Te%C3%B3rico/Ejercitaci%C3%B3n%20te%C3%B3rica%20de%20an%C3%A1lisis) :bookmark_tabs:
+
+### :desktop_computer: Parciales:
+* [Parciales](https://github.com/LetiziaPBallestero/AyED-2022-Redicatado-/tree/main/Parciales/src)  :desktop_computer:	
+
 ### :books: Material:
 * [Enunciados](https://github.com/LetiziaPBallestero/AyED-2022-Redicatado-/tree/main/Pr%C3%A1ctico/!Enunciados%20y%20Material) :bookmark_tabs:	
 * [Material de la Teoría](https://github.com/LetiziaPBallestero/AyED-2022-Redicatado-/tree/main/Te%C3%B3rico) :open_file_folder:	
